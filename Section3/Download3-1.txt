@@ -1,0 +1,19 @@
+http 통신
+1.비연결지향
+2.상태정보를 유지 하지 안함
+
+쿠키와 세션으로 상태를 유지함
+
+세션(서버)
+
+Restful :
+
+Rest API :
+
+Rest : http url 를 통해
+
+Resource : 위치 명시
+
+Method : 명시
+
+get, post, put(fetch), delete 단점도 있으나 단점을 상쇄할정도의 장점이 있음
