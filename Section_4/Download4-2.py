@@ -31,7 +31,8 @@ for location in soup.find_all("location"):
     # print(loc)
     weather = location.find_all("tmn")
     # print(weather)
-    if not(loc in info): #info 라는 딕셔너리에 loc 가 없으면 info 에 loc 를 선언하고 리스트의 빈값으로 넣어라(중복되지 않음)
+    if not(loc in info):
+        #info 라는 딕셔너리에 loc 가 없으면 info 에 loc 를 선언하고 리스트의 빈값으로 넣어라(중복되지 않음)
         info[loc] = []
     for tmn in weather:
         info[loc].append(tmn.string)
@@ -50,4 +51,3 @@ with open ('/Users/stronghu/Documents/inflearn/WebCrawling/Section_4/forest.txt'
         #딕셔너리 형태의 키값의 리스트가 n을 통해서 순회를 하게됨
             print("-",n)
             f.write('\t'+str(n)+'\n')
-            
