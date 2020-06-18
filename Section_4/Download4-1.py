@@ -25,7 +25,7 @@ with open(tfilename,'wt')as f:
     #f.write(data3)
     #data3는 리스트 로 선언되어있기 때문에 파이썬에서는 , 나 엔터를 구분할수가 없기때문에 따로 메소드를 지원함
     f.writelines('\n'.join(data3))
-
+        
 
 # 바이너리 읽기
 with open(bfilename,'rb') as f:
